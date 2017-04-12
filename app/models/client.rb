@@ -8,7 +8,7 @@ class Client < ApplicationRecord
 
   def payload
     "<div class='well list-group'>
-      <a href='http://localhost:3000/backend/clients/#{self.id}'>
+      <a href='https://client-prospector.herokuapp.com/backend/clients/#{self.id}'>
       <h2 class='text-center'>#{self.company_name}</h2>
       <ul>
         <li class='list-group-item'>Gender : #{self.gender}</li>
