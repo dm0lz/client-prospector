@@ -70,7 +70,7 @@ class GettingStartedExample extends Component {
 
   componentDidMount(){
     let that = this;
-    return fetch('http://localhost:3000/api/v1/maps/getAll').then(
+    return fetch('https://client-prospector.herokuapp.com/api/v1/maps/getAll').then(
       function(response) {
         if (response.type === 'opaque') {
           console.log('Received a response, but it\'s opaque so can\'t examine it');
