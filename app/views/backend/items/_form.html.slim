@@ -1,0 +1,9 @@
+ul
+  li
+    div.input-group
+      span.input-group-addon= "Name"
+      = f.text_field :name, class: "form-control"
+  li
+    div.input-group
+      span.input-group-addon= "Price"
+      = f.number_field :price, class: "form-control"

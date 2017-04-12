@@ -1,0 +1,4 @@
+nav.navbar.navbar-default
+  .navbar-right.top-nav
+    - if backend_admin_signed_in?
+      = link_to "logout", destroy_backend_admin_session_path, class: "btn btn-danger"

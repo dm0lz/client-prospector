@@ -1,0 +1,6 @@
+hr
+section.text-center
+  h3= "Create New Item"
+  = form_for @item, url: backend_items_path do |f|
+    = render "form", f: f
+    li= f.submit "Create Item", class: "btn"

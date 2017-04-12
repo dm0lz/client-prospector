@@ -1,0 +1,18 @@
+= render layout: "backend/layout" do
+  hr
+  section.text-center
+    h3="Items List"
+    = link_to "Create New Item", new_backend_item_path, class: "btn btn-warning"
+    ul
+      - @items.each do |item|
+        .row
+          .col-md-6
+            li= item.name
+            li= item.price
+          .col-md-6
+            ul
+              li= link_to "show", backend_item_path(item), class: "btn btn-success"
+              li= link_to "edit", edit_backend_item_path(item), class: "btn btn-info"
+              li= button_to 'Destroy', {action: :destroy, id: item.id},  onclick: 'return confirm("Are you sure?")', method: :delete, class: "btn btn-danger"
+
+        hr

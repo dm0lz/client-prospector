@@ -1,0 +1,56 @@
+
+<h2 class='text-center'>Edit <%= @client.company_name %></h2>
+<%= form_for [:backend, @client] do |f| %>
+
+  <ul class='list-group'>
+    <li class='list-group-item text-center form-group'>
+      <%= f.label :company_name %>
+      <%= f.text_field :company_name, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :gender %>
+      <%= f.text_field :gender, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :city %>
+      <%= f.text_field :city, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :country %>
+      <%= f.text_field :country, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :adr1 %>
+      <%= f.text_field :adr1, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :adr2 %>
+      <%= f.text_field :adr2, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :postal_code %>
+      <%= f.text_field :postal_code, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :phone1 %>
+      <%= f.text_field :phone1, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :phone2 %>
+      <%= f.text_field :phone2, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.label :more_infos %>
+      <%= f.text_area :more_infos, class: 'form-control' %>
+    </li>
+    <li class='list-group-item text-center'>
+      <%= f.submit class: "btn btn-success" %>
+    </li>
+
+  </ul>
+
+<% end %>

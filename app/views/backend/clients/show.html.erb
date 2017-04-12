@@ -1,0 +1,21 @@
+
+<div class='well list-group'>
+  <h2 class='text-center'><%= @client.company_name %></h2>
+  <ul>
+    <li class='list-group-item'>Gender : <%= @client.gender %></li>
+    <li class='list-group-item'>Name : <%= @client.name %></li>
+    <li class='list-group-item'>Company name : <%= @client.company_name %></li>
+    <li class='list-group-item'>City : <%= @client.city %></li>
+    <li class='list-group-item'>Adr1 : <%= @client.adr1 %></li>
+    <li class='list-group-item'>Adr2 : <%= @client.adr2 %></li>
+    <li class='list-group-item'>Postal Code : <%= @client.postal_code %></li>
+    <li class='list-group-item'>Country : <%= @client.country %></li>
+    <li class='list-group-item'>Phone1 : <%= @client.phone1 %></li>
+    <li class='list-group-item'>Phone2 : <%= @client.phone2 %></li>
+    <li class='list-group-item'>More Infos : <%= @client.more_infos %></li>
+  </ul>
+  <div style="text-align:center">
+    <%= link_to "Edit Client Infos", edit_backend_client_path(@client), class: "btn btn-info text-center" %>
+    <%= link_to "Back To Map", backend_clients_path, class: "btn btn-warning text-center" %>
+  </div>
+</div>
