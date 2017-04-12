@@ -2,7 +2,7 @@ require 'csv'
 class ClientsImporter
   class << self
     def call
-      CSV.parse(File.open("/Users/olivier/Desktop/clients2.csv", 'r:bom|utf-8'), col_sep: ';').drop(1).each_with_index do |row, index|
+      CSV.parse(File.open(Rails.root.join("public/clients2.csv"), 'r:bom|utf-8'), col_sep: ';').drop(1).each_with_index do |row, index|
         begin
           #binding.pry
           #client = Client.new(name: row[0], postal_code: row[4], city: row[5])
